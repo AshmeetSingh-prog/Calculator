@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#box {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: rgb(238, 212, 178);
+    width: 100%;
+    max-width: 400px; /* Ensure the box doesn't grow too large */
+}
+
+#history {
+    margin-top: 1rem;
+    height: 10%;
+    font-size: 1.2rem; /* Adjust font size for better readability */
+}
+
+#inputDiv {
+    margin-top: 0.5rem;
+}
+
+#input {
+    font-size: 2rem; /* Adjust font size for better readability */
+    width: 100%;
+    background-color: rgb(235, 228, 219);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#btnContainer {
+    margin-top: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(243, 225, 202);
+    padding: 1rem;
+}
+
+.buttons {
+    flex: 1 1 20%; /* Make buttons flexible and allow wrapping */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust font size for better readability */
+    border-radius: 50%;
+    background-color: rgb(226, 198, 162);
+    margin: 2px;
+    height: 4rem; /* Ensure buttons have a consistent height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #input {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+
+    .buttons {
+        font-size: 1.2rem; /* Smaller buttons on small screens */
+        height: 3rem; /* Adjust height for smaller screens */
+    }
+
+    #history {
+        font-size: 1rem; /* Smaller font size for history */
+    }
+}
+
+@media (max-width: 400px) {
+    #input {
+        font-size: 1.2rem; /* Further adjust for very small screens */
+    }
+
+    .buttons {
+        font-size: 1rem; /* Even smaller buttons */
+        height: 2.5rem; /* Adjust height further */
+    }
+
+    #history {
+        font-size: 0.8rem; /* Even smaller font size for history */
+    }
+}
